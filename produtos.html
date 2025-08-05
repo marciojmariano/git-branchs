@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Produtos</title>
+    <style>
+        body {
+            background: #f5f5f5;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 32px 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        h1 {
+            font-size: 2em;
+            color: #242424;
+            margin: 0;
+        }
+        .btn-cadastrar {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-cadastrar:hover {
+            background: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #e3e3e3;
+            text-align: left;
+        }
+        th {
+            background-color: #ededed;
+            color: #333;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        .product-image {
+            width: 56px;
+            height: 56px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        .price {
+            color: #007b3a;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Lista de Produtos</h1>
+            <button class="btn-cadastrar" onclick="alert('Aqui vai o cadastro de produto!')">Cadastrar Produto</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Imagem</th>
+                    <th>Produto</th>
+                    <th>Categoria</th>
+                    <th>Preço</th>
+                    <th>Estoque</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img class="product-image" src="https://via.placeholder.com/56x56?text=Produto+1" alt="Produto 1"></td>
+                    <td>Bolsa Feminina Couro</td>
+                    <td>Acessórios</td>
+                    <td class="price">R\$ 180,00</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td><img class="product-image" src="https://via.placeholder.com/56x56?text=Produto+2" alt="Produto 2"></td>
+                    <td>Camisa Polo Masculina</td>
+                    <td>Roupas</td>
+                    <td class="price">R\$ 79,90</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td><img class="product-image" src="https://via.placeholder.com/56x56?text=Produto+3" alt="Produto 3"></td>
+                    <td>Fone de Ouvido Bluetooth</td>
+                    <td>Eletrônicos</td>
+                    <td class="price">R\$ 129,00</td>
+                    <td>25</td>
+                </tr>
+                <!-- Adicione mais produtos aqui -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
